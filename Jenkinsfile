@@ -49,5 +49,17 @@ pipeline{
             }
 
         }
+        stage('Static code analysis: Sonar'){
+
+            when { expression {  params.action == 'create' } }
+            steps{
+
+                script{
+
+                    statiCodeAnalysis()
+                }
+            }
+
+        }
     }
 }
