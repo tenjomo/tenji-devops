@@ -56,7 +56,7 @@ pipeline{
 
                 script{
 
-                    def SonarQubecredentialsId = 'sonarqube-api'
+                    def SonarQubecredentialsId = 'gene-token'
                     statiCodeAnalysis(SonarQubecredentialsId)
                 }
             }
