@@ -25,7 +25,7 @@ pipeline{
             }
 
         }
-        stage('Unit test maven'){
+        stage('Build'){
 
             when { expression {  params.action == 'create' } }
             steps{
@@ -37,7 +37,7 @@ pipeline{
             }
 
         }
-        stage('Integration test maven'){
+        stage('Test'){
 
             when { expression {  params.action == 'create' } }
             steps{
