@@ -23,9 +23,9 @@ pipeline{
                     )
 
         }
-        /*stage('Build'){
+        stage('Build'){
 
-            when { expression {  params.action == 'create' } }
+            //when { expression {  params.action == 'create' } }
             steps{
 
                 script{
@@ -35,7 +35,7 @@ pipeline{
             }
 
         }
-        stage('Test'){
+        /*stage('Test'){
 
             when { expression {  params.action == 'create' } }
             steps{
