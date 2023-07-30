@@ -14,14 +14,10 @@ pipeline{
 
             //when { expression {  params.action == 'create' } }
             steps{
-
-                script{
-
                     gitCheckout(
                         branch: "main",
                         url: "https://github.com/tenjomo/tenji-devops.git"
                     )
-                }
             }
 
         }
