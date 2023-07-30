@@ -34,9 +34,9 @@ pipeline{
             }
 
         }
-        /*stage('Test'){
+        stage('Integration Test'){
 
-            when { expression {  params.action == 'create' } }
+            //when { expression {  params.action == 'create' } }
             steps{
 
                 script{
@@ -46,7 +46,7 @@ pipeline{
             }
 
         }
-        stage('Static code analysis: Sonar'){
+        /*stage('Static code analysis: Sonar'){
 
             when { expression {  params.action == 'create' } }
             steps{
