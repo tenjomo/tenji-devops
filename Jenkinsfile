@@ -46,19 +46,20 @@ pipeline{
             }
 
         }
-        /*stage('Static code analysis: Sonar'){
+        stage('Static code analysis: Sonar'){
+            
 
             when { expression {  params.action == 'create' } }
             steps{
 
                 script{
 
-                    def SonarQubecredentialsId = 'gene-token'
+                    def SonarQubecredentialsId = 'sonarqube-api'
                     statiCodeAnalysis(SonarQubecredentialsId)
                 }
             }
 
-        }*/
+        }
     }
  }
 
