@@ -40,6 +40,6 @@ public class HomeResource {
         private String name;
         private Integer id;
         private String place;
-        private String value;
+        private String values;
     }
 }
