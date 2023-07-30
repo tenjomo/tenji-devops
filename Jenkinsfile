@@ -15,13 +15,12 @@ pipeline{
             //when { expression {  params.action == 'create' } }
             steps{
 
-                
-
                     gitCheckout(
                         branch: "main",
                         url: "https://github.com/tenjomo/tenji-devops.git"
                     )
 
+                }
         }
         stage('Build'){
 
